@@ -3,7 +3,7 @@ import os
 
 app = Flask(__name__)
 
-APP_VERSION = os.getenv("APP_VERSION", "1.0.0")
+APP_VERSION = os.getenv("APP_VERSION", "2.0.0")
 APP_NAME = os.getenv("APP_NAME", "Deployment Tracker API")
 
 
@@ -35,7 +35,8 @@ def info():
         "app_name": APP_NAME,
         "version": APP_VERSION,
         "developer": "Oluwatoni Ajaka",
-        "role": "Information Technology Student"
+        "role": "Information Technology Student",
+        "position": "Searching intern"
     })
 
 
